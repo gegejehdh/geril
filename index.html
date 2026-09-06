@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi KSM Geografi Madrasah Aliyah - Edisi 51 Soal HOTS & Ayat Al-Qur'an</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-arabic { font-family: 'Amiri', serif; }
+        /* Custom scrollbar for modern aesthetics */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-emerald-50 via-teal-50 to-slate-100 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Header / Navbar -->
+    <header class="bg-emerald-900 text-white shadow-xl sticky top-0 z-50 border-b-4 border-amber-500">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-amber-500 text-emerald-950 font-arabic font-bold p-2.5 rounded-xl text-xl shadow-lg transform hover:scale-105 transition">☪</div>
+                <div>
+                    <h1 class="font-extrabold text-base md:text-xl tracking-tight text-amber-100">KSM GEOGRAFI MADRASAH ALIYAH</h1>
+                    <p class="text-xs text-emerald-300 font-medium">Kompetisi Sains Madrasah - Integrasi Ayat Al-Qur'an & Sains Modern</p>
+                </div>
+            </div>
+            <div id="timer-box" class="hidden bg-emerald-950/90 border border-amber-500/60 px-4 py-1.5 rounded-2xl flex items-center space-x-2 shadow-inner">
+                <span class="text-xs text-amber-400 font-bold uppercase tracking-wider">Sisa Waktu:</span>
+                <span id="timer-display" class="font-mono font-extrabold text-amber-300 text-base md:text-lg animate-pulse">02:00:00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-4 md:p-6 my-auto">
+
+        <!-- Welcome Screen -->
+        <div id="screen-welcome" class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl border border-emerald-100 p-6 md:p-10 text-center space-y-6">
+            <div class="inline-block p-4 bg-emerald-100 text-emerald-800 rounded-3xl text-4xl shadow-inner mb-2 transform -rotate-3 hover:rotate-0 transition duration-300">
+                📖🌍
+            </div>
+            <div class="space-y-3">
+                <span class="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full uppercase tracking-widest">Edisi Spesial Prediksi Nasional</span>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-emerald-950">Simulasi Ujian KSM Geografi MA</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+                    Ujian tingkat tinggi (HOTS) mencakup <strong class="text-emerald-800">51 soal analisis mendalam</strong>, diperkaya dengan penafsiran ayat-ayat Al-Qur'an tanpa terjemahan eksplisit, konsep sains geosfer komprehensif, dan pilihan ganda presisi.
+                </p>
+            </div>
+
+            <!-- Rules Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left my-6 bg-emerald-50/80 p-5 rounded-2xl border border-emerald-200">
+                <div class="flex items-start space-x-3 bg-white p-3.5 rounded-xl shadow-xs border border-emerald-100">
+                    <span class="bg-emerald-700 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+                    <div>
+                        <h4 class="font-bold text-emerald-900 text-sm">Ayat Al-Qur'an & Geografi</h4>
+                        <p class="text-xs text-slate-600 mt-0.5">Analisis makna ayat tentang gunung, siklus air, dan bentang alam tanpa terjemahan langsung.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-3 bg-white p-3.5 rounded-xl shadow-xs border border-emerald-100">
+                    <span class="bg-emerald-700 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+                    <div>
+                        <h4 class="font-bold text-emerald-900 text-sm">Durasi 120 Menit</h4>
+                        <p class="text-xs text-slate-600 mt-0.5">Waktu pengerjaan ketat selama 2 jam penuh sesuai standar kompetisi nasional KSM.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-3 bg-white p-3.5 rounded-xl shadow-xs border border-emerald-100">
+                    <span class="bg-emerald-700 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+                    <div>
+                        <h4 class="font-bold text-emerald-900 text-sm">Validasi Peserta Resmi</h4>
+                        <p class="text-xs text-slate-600 mt-0.5">Akses ujian terkunci khusus untuk peserta terdaftar dengan verifikasi nama valid.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Name Input Box -->
+            <div class="max-w-md mx-auto bg-emerald-50/70 p-6 rounded-2xl border border-emerald-200 space-y-3 text-left shadow-inner">
+                <label for="input-nama" class="block text-xs font-extrabold text-emerald-900 uppercase tracking-wider">Masukkan Nama Peserta Ujian:</label>
+                <input type="text" id="input-nama" placeholder="Ketik nama lengkap Anda (contoh: GERIL SUARDI)..." class="w-full px-4 py-3.5 rounded-xl border border-emerald-300 focus:outline-none focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-600 text-slate-800 font-medium text-sm transition bg-white">
+                <p id="error-nama" class="text-xs text-red-600 font-semibold hidden flex items-center space-x-1">
+                    <span>⚠️ Akses ditolak! Nama harus sesuai dengan data peserta terdaftar resmi.</span>
+                </p>
+            </div>
+
+            <div class="pt-3">
+                <button onclick="validateAndStart()" class="bg-gradient-to-r from-emerald-700 via-emerald-800 to-emerald-950 hover:from-emerald-800 hover:to-black text-white font-extrabold px-10 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition transform active:scale-95 text-base border-b-4 border-amber-500 flex items-center justify-center mx-auto space-x-2">
+                    <span>Mulai Ujian Sekarang</span>
+                    <span class="text-xl">🚀</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="screen-quiz" class="hidden space-y-4">
+            <!-- Top Nav Bar for Quiz -->
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-emerald-100 flex flex-wrap justify-between items-center gap-3">
+                <div class="flex items-center space-x-3">
+                    <span id="question-badge" class="px-3 py-1.5 bg-emerald-100 text-emerald-900 font-extrabold rounded-xl text-xs uppercase tracking-wider shadow-2xs">Analisis</span>
+                    <span id="question-topic" class="text-xs font-bold text-slate-500">Topik: Dasar Geografi</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span id="student-badge" class="text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1.5 rounded-xl border border-emerald-200">👤 Peserta: GERIL SUARDI</span>
+                    <button onclick="openNavigator()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-4 py-2 rounded-xl border border-slate-300 transition flex items-center space-x-1 shadow-2xs">
+                        <span>📋 Navigasi Soal</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="bg-white rounded-3xl shadow-xl border border-emerald-100 p-6 md:p-10 space-y-6">
+                <div class="flex justify-between items-start border-b border-slate-100 pb-4">
+                    <div>
+                        <span class="text-xs uppercase font-extrabold tracking-widest text-emerald-700 block mb-1">Pertanyaan Ujian</span>
+                        <h3 class="text-xl md:text-2xl font-extrabold text-emerald-950">Soal Nomor <span id="current-q-num">1</span> dari 51</h3>
+                    </div>
+                    <span id="difficulty-badge" class="text-xs font-extrabold px-3 py-1.5 rounded-full bg-purple-100 text-purple-900 border border-purple-200">Tinggi (HOTS)</span>
+                </div>
+
+                <!-- Question Text -->
+                <div id="question-text" class="text-slate-800 text-base md:text-lg font-medium leading-relaxed bg-emerald-50/30 p-5 rounded-2xl border border-emerald-100/60">
+                    <!-- Dynamic Question Text -->
+                </div>
+
+                <!-- Options List -->
+                <div id="options-container" class="space-y-3 pt-2">
+                    <!-- Dynamic Options -->
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="flex justify-between items-center pt-6 border-t border-slate-100">
+                    <button id="btn-prev" onclick="prevQuestion()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-2xl text-sm transition disabled:opacity-40 disabled:cursor-not-allowed flex items-center space-x-1">
+                        <span>← Sebelumnya</span>
+                    </button>
+                    <div id="quiz-progress-text" class="text-xs text-slate-600 font-bold bg-slate-100 px-4 py-2 rounded-xl">1 / 51 Terjawab</div>
+                    <button id="btn-next" onclick="nextQuestion()" class="px-7 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-2xl text-sm shadow-md transition flex items-center space-x-1">
+                        <span>Selanjutnya →</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="screen-result" class="hidden bg-white rounded-3xl shadow-2xl border border-emerald-100 p-6 md:p-10 text-center space-y-6">
+            <div class="inline-block p-4 bg-amber-100 text-amber-700 rounded-3xl text-4xl shadow-inner transform rotate-6">
+                🏆
+            </div>
+            <div class="space-y-2">
+                <h2 class="text-2xl md:text-4xl font-extrabold text-emerald-950">Ujian Selesai, Alhamdulillah!</h2>
+                <p class="text-slate-600 text-sm md:text-base max-w-xl mx-auto">Anda telah menyelesaikan seluruh 51 paket soal KSM Geografi Madrasah Aliyah tingkat tinggi dengan sukses.</p>
+            </div>
+
+            <div class="bg-gradient-to-b from-emerald-50 to-teal-50/50 border border-emerald-200 p-6 md:p-8 rounded-3xl max-w-lg mx-auto space-y-5 shadow-inner">
+                <div>
+                    <span class="text-xs text-slate-500 uppercase tracking-widest font-extrabold">Skor Akhir Prestasi Anda</span>
+                    <div id="final-score" class="text-6xl font-black text-emerald-900 mt-2">0</div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 pt-4 border-t border-emerald-200/80 text-sm">
+                    <div class="bg-white p-4 rounded-2xl shadow-2xs border border-emerald-100">
+                        <span class="text-slate-500 block text-xs font-bold uppercase">Jawaban Benar</span>
+                        <span id="correct-count" class="font-extrabold text-emerald-700 text-2xl mt-1 block">0</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl shadow-2xs border border-red-100">
+                        <span class="text-slate-500 block text-xs font-bold uppercase">Jawaban Salah</span>
+                        <span id="wrong-count" class="font-extrabold text-red-600 text-2xl mt-1 block">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-3 pt-3">
+                <button onclick="reviewAnswers()" class="px-7 py-3.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-2xl text-sm shadow-lg transition flex items-center justify-center space-x-2">
+                    <span>📖 Review Pembahasan Lengkap</span>
+                </button>
+                <button onclick="location.reload()" class="px-7 py-3.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-2xl text-sm border border-slate-300 transition flex items-center justify-center space-x-2">
+                    <span>🔄 Ulangi Simulasi Ujian</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Review Screen -->
+        <div id="screen-review" class="hidden space-y-6">
+            <div class="bg-white p-5 md:p-6 rounded-3xl shadow-sm border border-emerald-100 flex flex-wrap justify-between items-center gap-4">
+                <div>
+                    <h2 class="text-xl md:text-2xl font-extrabold text-emerald-950">Pembahasan Lengkap 51 Soal KSM</h2>
+                    <p class="text-xs text-slate-500 mt-0.5">Periksa kunci jawaban resmi, analisis HOTS, dan tafsir ayat Al-Qur'an secara mendalam.</p>
+                </div>
+                <button onclick="backToResult()" class="text-xs bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-5 py-2.5 rounded-2xl shadow transition">
+                    ← Kembali ke Skor
+                </button>
+            </div>
+            <div id="review-container" class="space-y-4">
+                <!-- Dynamically filled review list -->
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Question Navigator Modal -->
+    <div id="modal-navigator" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 md:p-8 shadow-2xl space-y-5 max-h-[85vh] overflow-y-auto border border-emerald-100">
+            <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+                <div>
+                    <h3 class="font-extrabold text-emerald-950 text-lg">Navigasi Nomor Soal Ujian</h3>
+                    <p class="text-xs text-slate-500">Klik nomor untuk melompat langsung ke soal. Hijau = Terjawab, Abu = Belum.</p>
+                </div>
+                <button onclick="closeNavigator()" class="text-slate-400 hover:text-slate-700 font-extrabold text-xl w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition">✕</button>
+            </div>
+            <div id="navigator-grid" class="grid grid-cols-5 sm:grid-cols-10 gap-2.5 pt-2">
+                <!-- Grid buttons 1-51 -->
+            </div>
+            <div class="pt-4 border-t border-slate-100 text-right">
+                <button onclick="closeNavigator()" class="px-6 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-2xl text-sm shadow">Tutup Navigasi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto py-5 text-center text-xs text-slate-500 border-t bg-white/80 backdrop-blur-xs shadow-inner">
+        Simulasi KSM Geografi Madrasah Aliyah • Edisi 51 Soal HOTS & Ayat Al-Qur'an Terintegrasi A-D
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Array of 51 Unique High-Level Questions including Quranic verse interpretations without translation text
+        const questions = [
+            {
+                topic: "1. Prediksi KSM: Integrasi Ayat Al-Qur'an & Geosfer (At-Tariq)",
+                difficulty: "Tinggi",
+                question: "Perhatikan firman Allah SWT dalam Surah At-Tariq ayat 11-12:<br><span class=\"font-arabic text-emerald-950 text-2xl md:text-3xl block my-3 text-center bg-emerald-50/90 p-5 rounded-2xl border border-emerald-200 shadow-inner\">(وَالسَّمَاءِ ذَاتِ الرَّجْعِ * وَالأَرْضِ ذَاتِ الصَّدْعِ)</span><br><br>Berdasarkan tafsir ilmiah kontemporer dalam geosfer, makna kata 'as-sad' (retakan/pecahan) pada bumi merujuk pada fenomena...",
+                options: [
+                    "A. Sistem patahan lempeng tektonik (fault zones) dan retakan kerak bumi yang memicu aktivitas vulkanisme dan kegempaan",
+                    "B. Proses pencairan es abadi di kutub akibat pemanasan global",
+                    "C. Pelapukan mekanik batuan sedimen di gurun pasir terbuka",
+                    "D. Erosi dasar sungai akibat aliran lahar dingin"
+                ],
+                answer: 0,
+                explanation: "Ayat ini (QS. At-Tariq: 12) mengisyaratkan sifat bumi yang memiliki 'ash-shad' atau retakan (sesar/patahan lempeng) yang menjadi jalur keluarnya magma dan aktivitas tektonik."
+            },
+            {
+                topic: "2. Prediksi KSM: Geografi Fisik & Atmosfer (Ar-Rum)",
+                difficulty: "Tinggi",
+                question: "Perhatikan firman Allah SWT dalam Surah Ar-Rum ayat 48:<br><span class=\"font-arabic text-emerald-950 text-2xl md:text-3xl block my-3 text-center bg-emerald-50/90 p-5 rounded-2xl border border-emerald-200 shadow-inner\">(اللَّهُ الَّذِي يُرْسِلُ الرِّيَاحَ فَتُثِيرُ سَحَابًا فَيَبْسُطُهُ فِي السَّمَاءِ كَيْفَ يَشَاءُ وَيَجْعَلُهُ كِسَفًا فَتَرَى الْوَدْقَ يَخْرُجُ مِنْ خِلَالِهِ...)</span><br><br>Tahapan siklus meteorologis yang dijelaskan pada frasa 'fayabsuthuhu... wayaj'aluhu kisafan' berkaitan erat dengan...",
+                options: [
+                    "A. Proses kondensasi vertikal dan perluasan massa awan kumulonimbus sebelum terjadinya presipitasi lebat",
+                    "B. Pembentukan lapisan ozon di stratosfer bagian bawah",
+                    "C. Penurunan tekanan udara minimum di pusat siklon tropis",
+                    "D. Pergerakan arus laut panas di Samudera Pasifik"
+                ],
+                answer: 0,
+                explanation: "Frasa tersebut menggambarkan dinamika pengembangan awan secara meluas dan bertumpuk (kumulonimbus) sebelum akhirnya menurunkan hujan ('al-wadq')."
+            },
+            {
+                topic: "3. Peta & Sistem Informasi Geografi (SIG) Terkini",
+                difficulty: "Tinggi",
+                question: "Dalam pemetaan spasial modern berbasis LiDAR (Light Detection and Ranging) untuk mitigasi longsor, gelombang laser pulsa yang dipancarkan dari pesawat terbang mampu menembus kanopi vegetasi rapat. Data utama yang dihasilkan dari pemrosesan titik pantul tersebut adalah...",
+                options: [
+                    "A. Model Ketinggian Digital (Digital Elevation Model / DEM) beresolusi sangat tinggi",
+                    "B. Peta sebaran warna cat bangunan penduduk",
+                    "C. Jumlah kandungan klorofil daun di dalam hutan",
+                    "D. Kecepatan angin permukaan tanah secara real-time"
+                ],
+                answer: 0,
+                explanation: "Teknologi LiDAR sangat unggul dalam menghasilkan DEM beresolusi tinggi karena mampu membedakan pantulan dari kanopi pohon dan permukaan tanah asli."
+            },
+            {
+                topic: "4. Iklim Global & Anomali Cuaca Ekstrem",
+                difficulty: "Tinggi",
+                question: "Fenomena interaksi atmosfer-laut di Samudera Pasifik tropis yang ditandai dengan melemahnya angin pasat timuran serta pergerakan massa air hangat ke arah timur (perairan Amerika Selatan) dikenal sebagai...",
+                options: [
+                    "A. El Niño",
+                    "B. La Niña",
+                    "C. Indian Ocean Dipole Positif",
+                    "D. Madden-Julian Oscillation"
+                ],
+                answer: 0,
+                explanation: "El Niño adalah anomali iklim global yang ditandai pemanasan suhu muka laut di Pasifik tengah dan timur, memicu kekeringan di wilayah maritim Indonesia."
+            },
+            {
+                topic: "5. Bencana & Mitigasi Gempa Megathrust",
+                difficulty: "Tinggi",
+                question: "Zona megathrust di wilayah subduksi selatan Jawa dan barat Sumatra terbentuk dari pertemuan lempeng Indo-Australia yang menyusup di bawah lempeng Eurasia. Karakteristik utama gempa bumi yang bersumber dari zona ini adalah...",
+                options: [
+                    "A. Gempa dangkal dengan magnitudo besar yang berpotensi memicu tsunami akibat deformasi dasar laut vertikal",
+                    "B. Gempa dalam di mantel bumi tanpa getaran di permukaan",
+                    "C. Letusan eksplosif freatik tanpa gelombang seismik",
+                    "D. Pergeseran mendatar horizontal murni tanpa deformasi vertikal"
+                ],
+                answer: 0,
+                explanation: "Zona subduksi megathrust menghasilkan gempa tektonik dangkal berpotensi tsunami akibat pengangkatan lempeng penunjang."
+            },
+            {
+                topic: "6. Sumber Daya Mineral & Tambang Strategis",
+                difficulty: "Tinggi",
+                question: "Kebijakan hilirisasi komoditas mineral di Indonesia melarang ekspor bijih mentah (raw ore) untuk meningkatkan nilai tambah domestik. Komoditas mineral strategis utama yang menjadi fokus hilirisasi untuk baterai kendaraan listrik adalah...",
+                options: [
+                    "A. Nikel dan Kobalt",
+                    "B. Batu bara dan Timbal",
+                    "C. Pasir kuarsa dan Marmer",
+                    "D. Belerang dan Garam"
+                ],
+                answer: 0,
+                explanation: "Nikel dan kobalt merupakan komponen esensial dalam teknologi penyimpanan energi hijau dan baterai kendaraan listrik modern."
+            },
+            {
+                topic: "7. Geomorfologi & Bentang Alam Fluvial",
+                difficulty: "Tinggi",
+                question: "Pada daerah aliran sungai bagian tengah hingga hilir, proses erosi lateral (samping) yang dominan disertai pengendapan pada bagian belokan sungai luar (cut bank) dan endapan titik (point bar) pada bagian dalam akan membentuk...",
+                options: [
+                    "A. Pola sungai meander (meandering river)",
+                    "B. Air terjun bertingkat",
+                    "C. Lembah glasial berbentuk U",
+                    "D. Kawah vulkanik maar"
+                ],
+                answer: 0,
+                explanation: "Aktivitas erosi lateral dan sedimentasi secara bersamaan di sungai dewasa membentuk pola berkelok-kelok (meander)."
+            },
+            {
+                topic: "8. Kependudukan & Bonus Demografi",
+                difficulty: "Tinggi",
+                question: "Indonesia sedang berada dalam era bonus demografi di mana proporsi penduduk usia produktif (15-64 tahun) mencapai puncaknya melebihi 60%. Tantangan utama spasial perkotaan akibat bonus demografi ini adalah...",
+                options: [
+                    "A. Lonjakan kebutuhan hunian layak, lapangan kerja formal, dan pengendalian urbanisasi masif",
+                    "B. Penurunan drastis jumlah kendaraan bermotor",
+                    "C. Pengosongan total wilayah perdesaan",
+                    "D. Ketiadaan aktivitas ekonomi di kota besar"
+                ],
+                answer: 0,
+                explanation: "Bonus demografi menuntut penyediaan lapangan kerja, pendidikan berkualitas, dan tata ruang perkotaan yang adaptif."
+            },
+            {
+                topic: "9. Geografi Ekonomi & Teori Lokasi",
+                difficulty: "Tinggi",
+                question: "Menurut model aglomerasi industri, perusahaan-perusahaan sejenis cenderung berkumpul dalam satu kawasan kluster industri untuk mendapatkan keuntungan berupa penghematan eksternal (localization economies). Contoh nyata di Indonesia adalah...",
+                options: [
+                    "A. Kluster industri tekstil di Bandung atau kawasan otomotif di Karawang",
+                    "B. Perkebunan kelapa sawit di tengah kota metropolitan",
+                    "C. Sentra nelayan tradisional di puncak gunung",
+                    "D. Pertambangan emas di dataran rendah Jakarta"
+                ],
+                answer: 0,
+                explanation: "Kluster industri manufaktur di Karawang atau Bandung memanfaatkan kedekatan infrastruktur dan rantai pasok bersama."
+            },
+            {
+                topic: "10. Integrasi Ayat Al-Qur'an & Hidrosfer (An-Nur)",
+                difficulty: "Tinggi",
+                question: "Perhatikan firman Allah SWT dalam Surah An-Nur ayat 43:<br><span class=\"font-arabic text-emerald-950 text-2xl md:text-3xl block my-3 text-center bg-emerald-50/90 p-5 rounded-2xl border border-emerald-200 shadow-inner\">(أَلَمْ تَرَ أَنَّ اللَّهَ يُزْجِي سَحَابًا ثُمَّ يُؤَلِّفُ بَيْنَهُ ثُمَّ يَجْعَلُهُ رُكَامًا فَتَرَى الْوَدْقَ يَخْرُجُ مِنْ خِلَالِهِ...)</span><br><br>Proses fisika atmosfer yang bersesuaian dengan frasa 'yuallifu bainahu thumma yaj'aluhu rukaman' adalah...",
+                options: [
+                    "A. Penggabungan massa uap air dan pertumbuhan awan konvektif secara bertumpuk (akumulasi awan hujan)",
+                    "B. Pembekuan air laut di daerah kutub utara",
+                    "C. Penguapan air tanah secara horizontal di gurun pasir",
+                    "D. Penurunan suhu udara akibat radiasi malam hari"
+                ],
+                answer: 0,
+                explanation: "Ayat ini secara akurat menjelaskan proses penggabungan awan dan penumpukannya secara vertikal ('rukaman') hingga matang menghasilkan hujan lebat."
+            },
+            {
+                topic: "11. Penginderaan Jauh & Spektrum Elektromagnetik",
+                difficulty: "Tinggi",
+                question: "Dalam perekaman citra satelit sumber daya alam, saluran spektral inframerah termal (thermal infrared) sangat berguna untuk mendeteksi...",
+                options: [
+                    "A. Suhu permukaan lahan (land surface temperature), aktivitas geotermal, dan sebaran titik panas kebakaran hutan",
+                    "B. Warna air laut di kedalaman 200 meter",
+                    "C. Ketinggian pohon hutan hujan tropis secara akurat",
+                    "D. Jenis mineral batuan di dalam perut bumi"
+                ],
+                answer: 0,
+                explanation: "Saluran inframerah termal mendeteksi radiasi panas yang dipancarkan oleh objek di permukaan bumi."
+            },
+            {
+                topic: "12. Perencanaan Kota & Tata Ruang",
+                difficulty: "Tinggi",
+                question: "Penerapan konsep 'Smart City' dalam tata ruang wilayah perkotaan modern di Indonesia mengintegrasikan teknologi informasi digital untuk mengelola aspek...",
+                options: [
+                    "A. Manajemen transportasi publik, efisiensi energi, dan layanan publik transparan",
+                    "B. Perluasan kawasan hutan lindung di pusat kota",
+                    "C. Penghapusan seluruh jaringan jalan raya",
+                    "D. Penghentian aktivitas industri manufaktur secara total"
+                ],
+                answer: 0,
+                explanation: "Smart City berfokus pada efisiensi pengelolaan kota melalui integrasi teknologi informasi di berbagai sektor publik."
+            },
+            {
+                topic: "13. Geografi Pertanian & Ketahanan Pangan",
+                difficulty: "Tinggi",
+                question: "Konversi lahan pertanian subur di Pulau Jawa menjadi kawasan permukiman dan industri menimbulkan ancaman serius terhadap...",
+                options: [
+                    "A. Stabilitas produksi pangan nasional dan cadangan beras dalam negeri",
+                    "B. Peningkatan jumlah cadangan devisa negara dari sektor ekspor kayu",
+                    "C. Penurunan suhu udara di kota besar secara drastis",
+                    "D. Kenaikan tinggi muka air laut di kutub"
+                ],
+                answer: 0,
+                explanation: "Alih fungsi lahan produktif di sentra pangan utama mengancam ketahanan dan kemandirian pangan nasional."
+            },
+            {
+                topic: "14. Geomorfologi Karst & Lingkungan",
+                difficulty: "Tinggi",
+                question: "Kawasan karst memiliki sistem hidrologi bawah tanah yang unik (subsurface drainage). Dampak negatif utama dari aktivitas penambangan batu kapur (semen) di kawasan karst terhadap lingkungan sekitar adalah...",
+                options: [
+                    "A. Rusaknya sistem akuifer bawah tanah, hilangnya cadangan air bersih warga, dan musnahnya ekosistem gua endemik",
+                    "B. Peningkatan kesuburan tanah pertanian secara instan",
+                    "C. Terbentuknya danau vulkanik baru di puncak bukit",
+                    "D. Penurunan suhu udara di musim kemarau"
+                ],
+                answer: 0,
+                explanation: "Penambangan karst merusak integritas rongga gua dan sistem sungai bawah tanah yang merupakan sumber air utama masyarakat sekitar."
+            },
+            {
+                topic: "15. Geografi Budaya & Kearifan Lokal",
+                difficulty: "Tinggi",
+                question: "Kearifan lokal masyarakat adat dalam mengelola hutan adat (misalnya Sasi di Maluku atau Leuweung Tutupan di Sunda) merupakan bentuk nyata adaptasi ekologis yang bertujuan untuk...",
+                options: [
+                    "A. Menjaga kelestarian sumber daya alam dan mencegah eksploitasi berlebihan demi keberlanjutan generasi",
+                    "B. Mempercepat laju deforestasi hutan sekunder",
+                    "C. Meningkatkan impor kayu tropis luar negeri",
+                    "D. Mengubah seluruh hutan menjadi perkebunan monokultur"
+                ],
+                answer: 0,
+                explanation: "Kearifan lokal tradisional dirancang untuk menjaga keseimbangan ekosistem dan konservasi sumber daya alam secara turun-temurun."
+            },
+            {
+                topic: "16. Integrasi Ayat Al-Qur'an & Geografi Wilayah (Al-Mulk)",
+                difficulty: "Tinggi",
+                question: "Perhatikan firman Allah SWT dalam Surah Al-Mulk ayat 3:<br><span class=\"font-arabic text-emerald-950 text-2xl md:text-3xl block my-3 text-center bg-emerald-50/90 p-5 rounded-2xl border border-emerald-200 shadow-inner\">(الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ طِبَاقًا ۖ مَّا تَرَى فِي خَلْقِ الرَّحْمَٰنِ مِن تَفَاوُتٍ ۖ فَارْجِعِ الْبَصَرَ هَلْ تَرَى مُفُوتٍ)</span><br><br>Konsep 'ithbaqan' (berlapis-lapis secara teratur) dalam struktur tata surya dan atmosfer bumi mencerminkan keteraturan hukum alam yang dalam geografi dipelajari melalui...",
+                options: [
+                    "A. Sistem keterpaduan lapisan geosfer (litosfer, hidrosfer, atmosfer, biosfer) yang seimbang",
+                    "B. Ketidakpastian mutlak fenomena cuaca harian",
+                    "C. Perubahan rotasi bumi yang tidak beraturan",
+                    "D. Kerusakan lingkungan tanpa batas di muka bumi"
+                ],
+                answer: 0,
+                explanation: "Keteraturan lapisan-lapisan sistem alam semesta menunjukkan keselarasan hukum fisika dan geosfer ciptaan Allah SWT."
+            },
+            {
+                topic: "17. Kartografi & Proyeksi Peta",
+                difficulty: "Tinggi",
+                question: "Proyeksi peta Mercator sering digunakan untuk navigasi pelayaran karena sifat khususnya yang konformal (mempertahankan bentuk sudut). Namun, kelemahan utama proyeksi ini pada peta dunia adalah terjadinya distorsi ukuran yang sangat besar di daerah...",
+                options: [
+                    "A. Lintang tinggi (seperti Greenland dan Antartika tampak sangat luas dibanding aslinya)",
+                    "B. Wilayah sekitar garis ekuator",
+                    "C. Belahan bumi bagian selatan saja",
+                    "D. Wilayah gurun pasir subtropis"
+                ],
+                answer: 0,
+                explanation: "Proyeksi Mercator memperbesar ukuran daratan di lintang tinggi secara tidak proporsional seiring mendekati kutub."
+            },
+            {
+                topic: "18. Oseanografi & Arus Laut",
+                difficulty: "Tinggi",
+                question: "Arus lintas Indonesia (Arlindo) adalah arus laut yang mengalirkan massa air dari Samudera Pasifik menuju Samudera Hindia melalui perairan Nusantara. Pergerakan massa air ini sangat dipengaruhi oleh...",
+                options: [
+                    "A. Perbedaan tinggi muka laut antara Pasifik barat dan Hindia timur serta tiupan angin muson",
+                    "B. Rotasi bulan mengelilingi bumi setiap hari",
+                    "C. Letusan gunung berapi bawah laut di Selat Sunda",
+                    "D. Pencairan es di Laut Mediterania"
+                ],
+                answer: 0,
+                explanation: "Arlindo digerakkan oleh gradien tekanan permukaan laut antara Pasifik dan Hindia serta dinamika angin muson regional."
+            },
+            {
+                topic: "19. Demografi & Migrasi Penduduk",
+                difficulty: "Tinggi",
+                question: "Migrasi sirkuler (penduduk melakoni mobilitas bolak-balik tanpa berniat menetap permanen, misal pelaju/commuter harian dari Bogor ke Jakarta) dalam studi demografi didorong oleh faktor...",
+                options: [
+                    "A. Perbedaan kesempatan kerja dan fasilitas pusat kota dengan daerah pinggiran (push-pull factors)",
+                    "B. Larangan mutlak tinggal di perkotaan besar",
+                    "C. Keseragaman upah minimum regional di seluruh wilayah",
+                    "D. Bencana banjir abadi di seluruh wilayah desa"
+                ],
+                answer: 0,
+                explanation: "Mobilitas sirkuler terjadi karena daya tarik pusat pertumbuhan ekonomi perkotaan yang tidak diimbangi biaya tempat tinggal permanen yang terjangkau."
+            },
+            {
+                topic: "20. Analisis Spasial & SIG Lanjutan",
+                difficulty: "Tinggi",
+                question: "Dalam analisis SIG untuk penentuan lokasi pembangunan fasilitas kesehatan baru, operasi spasial yang digunakan untuk menggabungkan peta kemiringan lereng, peta kerawanan longsor, dan peta kepadatan penduduk adalah...",
+                options: [
+                    "A. Overlay (tumpang susun) berbasis pembobotan multikriteria (Weighted Overlay)",
+                    "B. Buffering jarak garis pantai",
+                    "C. Transformasi raster ke vektor sederhana",
+                    "D. Interpolasi titik ketinggian tunggal"
+                ],
+                answer: 0,
+                explanation: "Analisis multi-kriteria dengan teknik overlay menggabungkan berbagai variabel spasial untuk menghasilkan peta kesesuaian lahan."
+            },
+            {
+                topic: "21. Geografi Ekonomi & Globalisasi",
+                difficulty: "Tinggi",
+                question: "Fenomena 'deindustrialisasi' di beberapa negara maju terjadi karena perusahaan memindahkan pabrik manufaktur mereka ke negara berkembang dengan upah buruh lebih murah. Proses geografis ekonomi ini berkaitan dengan...",
+                options: [
+                    "A. Pembentukan rantai pasok global (global value chains) dan pencarian efisiensi biaya",
+                    "B. Isolasi ekonomi total dari perdagangan bebas",
+                    "C. Penghentian seluruh penggunaan mesin pabrik",
+                    "D. Keseragaman iklim dunia"
+                ],
+                answer: 0,
+                explanation: "Globalisasi ekonomi mendorong perusahaan multinasional merelokasi pabrik demi efisiensi biaya produksi lintas negara."
+            },
+            {
+                topic: "22. Bencana Banjir Bandang & DAS",
+                difficulty: "Tinggi",
+                question: "Banjir bandang (flash flood) yang sering melahirkan kerusakan parah di kawasan lereng hulu umumnya dipicu oleh kombinasi faktor...",
+                options: [
+                    "A. Curah hujan ekstrem berintensitas tinggi, penggundulan hutan di hulu, dan runtuhnya bendung alami material longsoran di alur sungai",
+                    "B. Pasang surut air laut di muara delta",
+                    "C. Letusan gempa vulkanik dasar laut",
+                    "D. Penurunan suhu udara malam hari"
+                ],
+                answer: 0,
+                explanation: "Banjir bandang merupakan bencana hidrometeorologis cepat akibat curah hujan ekstrem yang terhambat material longsor di hulu sungai."
+            },
+            {
+                topic: "23. Klimatologi & Perubahan Iklim Global",
+                difficulty: "Tinggi",
+                question: "Perjanjian internasional Paris Agreement menetapkan target ambisius pembatasan kenaikan suhu rata-rata global di bawah 2°C (bahkan berupaya membatasi hingga 1,5°C) dibandingkan masa pra-industri dengan cara menekan emisi...",
+                options: [
+                    "A. Gas rumah kaca seperti karbon dioksida (CO2) dan metana (CH4)",
+                    "B. Gas oksigen murni di atmosfer",
+                    "C. Uap air alami di lapisan stratosfer",
+                    "D. Gas mulia argon di udara"
+                ],
+                answer: 0,
+                explanation: "Paris Agreement berfokus pada mitigasi emisi gas rumah kaca utama pemicu pemanasan global."
+            },
+            {
+                topic: "24. Integrasi Ayat Al-Qur'an & Siklus Air (Az-Zumar)",
+                difficulty: "Tinggi",
+                question: "Perhatikan firman Allah SWT dalam Surah Az-Zumar ayat 21:<br><span class=\"font-arabic text-emerald-950 text-2xl md:text-3xl block my-3 text-center bg-emerald-50/90 p-5 rounded-2xl border border-emerald-200 shadow-inner\">(أَلَمْ تَرَ أَنَّ اللَّهَ أَنزَلَ مِنَ السَّمَاءِ مَاءً فَسَلَكَهُ يَنَابِيعَ فِي الْأَرْضِ...)</span><br><br>Ayat di atas menjelaskan proses hidrologi infiltrasi dan perkolasi air hujan ke dalam tanah hingga membentuk...",
+                options: [
+                    "A. Sistem akuifer air tanah dan mata air (groundwater springs) di dalam litosfer",
+                    "B. Gelombang pasang tsunami di tengah samudera",
+                    "C. Lapisan es abadi di puncak gunung tertinggi",
+                    "D. Erosi batuan beku di kawah gunung berapi"
+                ],
+                answer: 0,
+                explanation: "Ayat ini (QS. Az-Zumar: 21) secara akurat menggambarkan siklus air bawah tanah di mana air hujan meresap ke dalam bumi menjadi sumber mata air ('yanabi'a')."
+            },
+            {
+                topic: "25. Geografi Kota & Struktur Ruang",
+                difficulty: "Tinggi",
+                question: "Model konsentris Burgess mengenai struktur internal kota membagi wilayah perkotaan menjadi beberapa zona melingkar konsentris, di mana zona transisi (zona kelunturan) biasanya ditempati oleh...",
+                options: [
+                    "A. Permukiman padat kualitas rendah, gudang, dan industri ringan bercampur fungsi komersial",
+                    "B. Kompleks perumahan elit mewah bertaman luas",
+                    "C. Lahan pertanian padi organik skala besar",
+                    "D. Kawasan hutan lindung kota permanen"
+                ],
+                answer: 0,
+                explanation: "Zona transisi dalam model Burgess adalah kawasan sekitar pusat kota yang mengalami degradasi fisik dan dihuni penduduk berpenghasilan rendah."
+            },
+            {
+                topic: "26. Geomorfologi Eolian & Wilayah Arid",
+                difficulty: "Tinggi",
+                question: "Bentang alam eolian (terbentuk oleh aktivitas angin) di wilayah gurun pasir menghasilkan bentuk lahan endapan pasir berupa bukit pasir atau gumuk pasir (dune). Bentuk gumuk pasir tipe barchan menyerupai bentuk...",
+                options: [
+                    "A. Bulan sabit dengan tanduk menghadap ke arah tiupan angin",
+                    "B. Garis lurus panjang sejajar garis pantai",
+                    "C. Lingkaran konsentris tanpa arah angin",
+                    "D. Piramida tajam berdiri tegak"
+                ],
+                answer: 0,
+                explanation: "Gumuk pasir barchan berbentuk seperti bulan sabit yang terbentuk di daerah dengan pasokan pasir terbatas dan arah angin konstan."
+            },
+            {
+                topic: "27. Kependudukan & Piramida Penduduk",
+                difficulty: "Tinggi",
+                question: "Suatu negara dengan bentuk piramida penduduk stasioner (menyerupai sarang tawon atau lonceng tegak) mencerminkan kondisi demografi di mana tingkat kelahiran dan tingkat kematian...",
+                options: [
+                    "A. Sama-sama berada pada tingkat yang rendah dengan pertumbuhan penduduk mendekati nol",
+                    "B. Sangat tinggi dengan angka kematian bayi melonjak",
+                    "C. Didominasi oleh anak-anak usia di bawah 5 tahun",
+                    "D. Mengalami migrasi keluar secara masif"
+                ],
+                answer: 0,
+                explanation: "Piramida stasioner menunjukkan kestabilan demografi dengan tingkat fertilitas dan mortalitas yang sama-sama rendah."
+            },
+            {
+                topic: "28. Sumber Daya Air & Manajemen DAS",
+                difficulty: "Tinggi",
+                question: "Pendekatan pengelolaan Daerah Aliran Sungai (DAS) terpadu mengharuskan perencanaan pembangunan dilakukan berdasarkan batas wilayah...",
+                options: [
+                    "A. Topografi hidrologis aliran sungai dari hulu hingga hilir, bukan berdasarkan batas wilayah administratif buatan",
+                    "B. Batas kepemilikan tanah perorangan di desa",
+                    "C. Garis lintang dan bujur peta dunia",
+                    "D. Batas wilayah kekuasaan militer regional"
+                ],
+                answer: 0,
+                explanation: "Pengelolaan DAS bersifat ekologis berdasarkan kesatuan hidrologi aliran air dari punggung bukit hingga muara."
+            },
+            {
+                topic: "29. Geografi Transportasi & Jaringan",
+                difficulty: "Tinggi",
+                question: "Indeks konektivitas dalam teori graf geografi transportasi mengukur tingkat keterhubungan antar-simpul (kota) dalam suatu wilayah. Semakin tinggi nilai indeks konektivitas suatu jaringan jalan, maka...",
+                options: [
+                    "A. Efisiensi pergerakan dan interaksi antar-wilayah semakin tinggi",
+                    "B. Waktu tempuh perjalanan antar-kota semakin lama",
+                    "C. Biaya transportasi logistik semakin mahal",
+                    "D. Jumlah jalan alternatif semakin sedikit"
+                ],
+                answer: 0,
+                explanation: "Indeks konektivitas yang tinggi menunjukkan jaringan transportasi yang padat dan efisien dalam memfasilitasi mobilitas."
+            },
+            {
+                topic: "30. Integrasi Ayat Al-Qur'an & Atmosfer (Al-An'am)",
+                difficulty: "Tinggi",
+                question: "Perhatikan firman Allah SWT dalam Surah Al-An'am ayat 125:<br><span class=\"font-arabic text-emerald-950 text-2xl md:text-3xl block my-3 text-center bg-emerald-50/90 p-5 rounded-2xl border border-emerald-200 shadow-inner\">(فَمَن يُرِدِ اللَّهُ أَن يَهْدِيَهُ يَشْرَحْ صَدْرَهُ لِلْإِسْلَامِ ۖ وَمَن يُرِدْ أَن يُضِلَّهُ يَجْعَلْ صَدْرَهُ ضَيِّقًا حَرَجًا كَأَنَّمَا يَصَّعَّدُ فِي السَّمَاءِ...)</span><br><br>Perumpamaan fisik yang digunakan dalam ayat di atas mengenai kesulitan bernapas saat naik ke langit (at-tasa'ud fis-sama') secara ilmiah berkaitan dengan penurunan...",
+                options: [
+                    "A. Tekanan udara dan kadar oksigen parsial seiring bertambahnya ketinggian di atmosfer",
+                    "B. Suhu udara di lapisan stratosfer atas",
+                    "C. Medan magnet bumi di khatulistiwa",
+                    "D. Kecepatan rotasi bumi harian"
+                ],
+                answer: 0,
+                explanation: "Ayat ini secara menakjubkan menggunakan fenomena penurunan tekanan oksigen dan udara tipis di ketinggian atmosfer sebagai perumpamaan spiritual."
+            },
+            {
+                topic: "31. Penginderaan Jauh & Resolusi Citra",
+                difficulty: "Tinggi",
+                question: "Dalam penginderaan jauh, kemampuan sensor untuk merekam detail objek terkecil di permukaan bumi dikenal sebagai resolusi spasial. Jika sebuah citra satelit memiliki resolusi spasial 0,5 meter, artinya...",
+                options: [
+                    "A. Setiap piksel pada citra tersebut mewakili area seluas 0,5 x 0,5 meter di permukaan bumi",
+                    "B. Satelit tersebut merekam gambar setiap 0,5 detik sekali",
+                    "C. Panjang gelombang sensor bernilai 0,5 mikrometer",
+                    "D. Citra tersebut memiliki 0,5 saluran spektral"
+                ],
+                answer: 0,
+                explanation: "Resolusi spasial mendefinisikan ukuran piksel terkecil di bumi yang dapat dibedakan oleh sensor satelit."
+            },
+            {
+                topic: "32. Mitigasi Bencana Kebakaran Hutan & Lahan",
+                difficulty: "Tinggi",
+                question: "Kebakaran hutan dan lahan gambut di Indonesia sering meningkat tajam saat musim kemarau panjang akibat fenomena El Niño. Karakteristik khusus lahan gambut yang membuatnya sangat rentan terbakar adalah...",
+                    options: [
+                    "A. Mengandung bahan organik kering mudah terbakar di bawah permukaan saat muka air tanah turun",
+                    "B. Tersusun atas batuan beku vulkanik padat",
+                    "C. Memiliki kelembapan mutlak 100% sepanjang tahun",
+                    "D. Terendam air asin laut secara permanen"
+                ],
+                answer: 0,
+                explanation: "Lahan gambut yang mengalami pengeringan (drainase) sangat rentan mengalami kebakaran bawah tanah (subsurface fire) yang sulit dipadamkan."
+            },
+            {
+                topic: "33. Geografi Pariwisata & Ekowisata",
+                difficulty: "Tinggi",
+                question: "Pengembangan konsep pariwisata berkelanjutan (sustainable tourism) di kawasan Taman Nasional berfokus pada prinsip utama berupa...",
+                options: [
+                    "A. Keseimbangan antara konservasi alam, pemberdayaan ekonomi masyarakat lokal, dan edukasi lingkungan",
+                    "B. Pembangunan hotel mewah bertingkat tinggi di zona inti",
+                    "C. Eksploitasi maksimal jumlah kunjungan wisatawan tanpa batas",
+                    "D. Penutupan total seluruh kawasan dari akses publik"
+                ],
+                answer: 0,
+                explanation: "Ekowisata berkelanjutan mengutamakan perlindungan ekosistem asli sekaligus memberikan manfaat ekonomi bagi masyarakat lokal."
+            },
+            {
+                topic: "34. Geomorfologi Pantai & Abrasi",
+                difficulty: "Tinggi",
+                question: "Bangunan pantai pelindung seperti pemecah gelombang (breakwater) dibangun di lepas pantai sejajar garis pantai dengan tujuan utama...",
+                options: [
+                    "A. Meredam energi gelombang laut sebelum mencapai garis pantai sehingga mencegah abrasi dan erosi pantai",
+                    "B. Menambah volume pasir pantai secara alami setiap hari",
+                    "C. Menghentikan arus pasang surut air laut total",
+                    "D. Menjadi jalur pelayaran kapal tanker besar"
+                ],
+                answer: 0,
+                explanation: "Breakwater berfungsi memecah energi gelombang tinggi agar abrasi di garis pantai dapat diminimalkan."
+            },
+            {
+                topic: "35. Kependudukan & Indeks Pembangunan Manusia",
+                difficulty: "Tinggi",
+                question: "Komponen perhitungan Indeks Pembangunan Manusia (IPM) mencakup tiga indikator utama pembangunan sosial, yaitu...",
+                options: [
+                    "A. Umur panjang dan hidup sehat, pengetahuan (pendidikan), serta standar hidup layak",
+                    "B. Jumlah pendapatan pajak daerah dan luas wilayah",
+                    "C. Jumlah kendaraan bermotor dan panjang jalan tol",
+                    "D. Tingkat curah hujan dan kesuburan tanah"
+                ],
+                answer: 0,
+                explanation: "IPM diukur melalui tiga dimensi esensial: kesehatan (angka harapan hidup), pendidikan (harapan lama sekolah dan rata-rata lama sekolah), serta ekonomi (pengeluaran per kapita)."
+            },
+            {
+                topic: "36. Geografi Ekonomi & Teori Kutub Pertumbuhan",
+                difficulty: "Tinggi",
+                question: "Teori Kutub Pertumbuhan (Growth Pole Theory) yang dikembangkan oleh François Perroux menyatakan bahwa pembangunan ekonomi tidak terjadi secara serentak di semua tempat, melainkan muncul pada...",
+                options: [
+                    "A. Titik atau kutub pertumbuhan tertentu yang memiliki industri penghela (propulsive industries) dan menyebar ke wilayah periferi",
+                    "B. Wilayah pedesaan terpencil tanpa akses jalan",
+                    "C. Kawasan hutan lindung tanpa aktivitas manusia",
+                    "D. Sektor pertanian subsisten tradisional"
+                ],
+                answer: 0,
+                explanation: "Kutub pertumbuhan memusatkan kegiatan ekonomi dinamis yang kemudian memberikan efek tetesan ke bawah (trickle-down effect) ke daerah sekitarnya."
+            },
+            {
+                topic: "37. Integrasi Ayat Al-Qur'an & Astronomi Geografi (Yasin)",
+                difficulty: "Tinggi",
+                question: "Perhatikan firman Allah SWT dalam Surah Yasin ayat 38-40:<br><span class=\"font-arabic text-emerald-950 text-2xl md:text-3xl block my-3 text-center bg-emerald-50/90 p-5 rounded-2xl border border-emerald-200 shadow-inner\">(وَالشَّمْسُ تَجْرِي لِمُسْتَقَرٍّ لَّهَا ۚ ذَٰلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ * وَالْقَمَرَ قَدَّرْنَاهُ مَنَازِلَ حَتَّىٰ عَادَ كَالْعُرْجونِ الْقَدِيمِ)</span><br><br>Ayat di atas menguraikan ketepatan sistem peredaran benda langit yang menjadi dasar utama dalam penetapan sistem penanggalan...",
+                options: [
+                    "A. Kalender Hijriah (Qamariyah) berdasarkan fase-fase perubahan bentuk bulan (manazil)",
+                    "B. Kalender Masehi berbasis revolusi planet Mars",
+                    "C. Kalender musim tanam padi tradisional Eropa",
+                    "D. Sistem waktu universal Greenwich mutlak"
+                ],
+                answer: 0,
+                explanation: "Fase bulan ('manazil' hingga 'al-'urjun al-qadim') menjadi landasan astronomis penetapan kalender qamariyah dalam Islam."
+            },
+            {
+                topic: "38. Pedologi & Konservasi Tanah",
+                difficulty: "Tinggi",
+                question: "Metode konservasi tanah secara vegetatif untuk mencegah erosi di lahan miring meliputi penanaman menurut garis kontur (contour strip cropping), reboisasi, dan pembuatan...",
+                options: [
+                    "A. Tanaman penutup tanah (cover crops) dan lorong vegetasi (alley cropping)",
+                    "B. Dinding beton bertulang setinggi 10 meter",
+                    "C. Saluran drainase beton kedap air di seluruh lereng",
+                    "D. Pengaspalan total permukaan bukit"
+                ],
+                answer: 0,
+                explanation: "Konservasi vegetatif memanfaatkan tanaman penutup dan strip tanaman untuk menahan laju aliran limpasan permukaan dan erosi tanah."
+            },
+            {
+                topic: "39. Klimatologi & Efek Rumah Kaca",
+                difficulty: "Tinggi",
+                question: "Mekanisme alami efek rumah kaca sangat penting bagi kehidupan di bumi karena menjaga suhu permukaan bumi tetap hangat. Namun, peningkatan aktivitas manusia menyebabkan pemanasan global karena gas rumah kaca berlebih di atmosfer memantulkan kembali...",
+                options: [
+                    "A. Radiasi gelombang panjang (panas inframerah) dari permukaan bumi kembali ke bawah",
+                    "B. Sinar ultraviolet langsung dari matahari ke angkasa",
+                    "C. Gelombang radio komunikasi satelit",
+                    "D. Cahaya tampak kasat mata"
+                ],
+                answer: 0,
+                explanation: "Gas rumah kaca menyerap dan memantulkan kembali radiasi panas gelombang panjang yang dipancarkan permukaan bumi, menaikkan suhu atmosfer."
+            },
+            {
+                topic: "40. Analisis Spasial Keruangan",
+                difficulty: "Tinggi",
+                question: "Dalam konsep pola keruangan geografi, analisis tetangga terdekat (Nearest Neighbor Analysis) digunakan untuk menentukan apakah sebaran titik lokasi permukiman di suatu wilayah berpola...",
+                options: [
+                    "A. Mengelompok (clustered), seragam (uniform), atau acak (random)",
+                    "B. Linier mengikuti aliran sungai saja",
+                    "C. Melingkar mengelilingi pusat gunung berapi",
+                    "D. Stasioner tanpa koordinat spasial"
+                ],
+                answer: 0,
+                explanation: "Analisis tetangga terdekat mengukur jarak antar-titik fenomena untuk menentukan karakteristik pola sebaran spasialnya."
+            },
+            {
+                topic: "41. Geografi Kota & Suburbanisasi",
+                difficulty: "Tinggi",
+                question: "Fenomena perpindahan penduduk dan aktivitas komersial dari pusat kota inti ke wilayah pinggiran kota (suburb) dikenal sebagai proses suburbanisasi. Dampak spasial utama dari fenomena ini adalah...",
+                options: [
+                    "A. Terbentuknya kawasan megapolitan dan perluasan wilayah terbangun (urban sprawl) secara masif",
+                    "B. Pengosongan total wilayah pinggiran kota",
+                    "C. Penurunan jumlah kendaraan bermotor di jalan raya",
+                    "D. Peningkatan luas hutan kota secara drastis"
+                ],
+                answer: 0,
+                explanation: "Suburbanisasi memicu perluasan wilayah urban (urban sprawl) ke daerah pinggiran yang mengubah lahan pertanian menjadi permukiman."
+            },
+            {
+                topic: "42. Sumber Daya Energi Terbarukan",
+                difficulty: "Tinggi",
+                question: "Potensi energi surya (solar energy) di Indonesia sangat tinggi karena terletak di wilayah ekuator dengan penyinaran matahari sepanjang tahun. Tantangan utama teknis dalam pemanfaatan panel surya fotovoltaik adalah...",
+                options: [
+                    "A. Fluktuasi cuaca berawan atau hujan yang menurunkan efisiensi produksi listrik serta kebutuhan penyimpanan baterai",
+                    "B. Emisi gas karbon monoksida yang dihasilkan panel",
+                    "C. Ketiadaan radiasi matahari sama sekali di malam hari tanpa solusi",
+                    "D. Tingginya risiko ledakan termal magmatis"
+                ],
+                answer: 0,
+                explanation: "Intermitensi (ketidakpastian cuaca dan siang-malam) menjadi tantangan utama yang diatasi dengan sistem penyimpanan baterai."
+            },
+            {
+                topic: "43. Integrasi Ayat Al-Qur'an & Litosfer (Luqman)",
+                difficulty: "Tinggi",
+                question: "Perhatikan firman Allah SWT dalam Surah Luqman ayat 10:<br><span class=\"font-arabic text-emerald-950 text-2xl md:text-3xl block my-3 text-center bg-emerald-50/90 p-5 rounded-2xl border border-emerald-200 shadow-inner\">(خَلَقَ السَّمَاوَاتِ بِغَيْرِ عَمَدٍ تَرَوْنَهَا وَأَلْقَىٰ فِي الْأَرْضِ رَوَاسِيَ أَن تَمِيدَ بِكُمْ وَبَثَّ فِيهَا مِن كُلِّ دَابَّةٍ...)</span><br><br>Hubungan antara konsep 'rawasi' (gunung sebagai penyeimbang) dengan keanekaragaman makhluk hidup ('dabbah') di muka bumi menunjukkan adanya sistem...",
+                options: [
+                    "A. Keseimbangan ekologis dan stabilitas litosfer yang mendukung kelangsungan biosfer",
+                    "B. Isolasi total wilayah tanpa ada interaksi organisme",
+                    "C. Perubahan kerak bumi yang destruktif secara permanen",
+                    "D. Penurunan jumlah spesies hewan secara drastis"
+                ],
+                answer: 0,
+                explanation: "Ayat ini mengaitkan kestabilan geologis bumi ('rawasi') dengan penyebaran kehidupan makhluk hidup ('dabbah'), menunjukkan harmoni ekosistem ciptaan Allah."
+            },
+            {
+                topic: "44. SIG & Basis Data Spasial",
+                difficulty: "Tinggi",
+                question: "Model data raster dalam Sistem Informasi Geografi merepresentasikan fenomena geosfer dalam bentuk...",
+                options: [
+                    "A. Matriks sel atau grid piksel yang masing-masing memiliki nilai atribut tertentu",
+                    "B. Titik koordinat X dan Y yang dihubungkan garis lurus",
+                    "C. Poligon tertutup batas wilayah administratif",
+                    "D. Tabel relasional tanpa informasi visual peta"
+                ],
+                answer: 0,
+                explanation: "Model data raster menggunakan grid piksel seluler untuk merepresentasikan fenomena spasial kontinu seperti elevasi atau suhu."
+            },
+            {
+                topic: "45. Geomorfologi Vulkanik & Erupsi",
+                difficulty: "Tinggi",
+                question: "Bahaya sekunder gunung berapi yang sangat mematikan saat musim hujan di wilayah lereng berapi aktif adalah aliran lumpur vulkanik bercampur air hujan yang mengalir deras di lembah sungai, yang disebut...",
+                options: [
+                    "A. Lahar (lahar dingin / debris flow)",
+                    "B. Awan panas piroklastik (nuée ardente)",
+                    "C. Lava pijar meleleh lambat",
+                    "D. Gas beracun solfatar"
+                ],
+                answer: 0,
+                explanation: "Lahar adalah aliran material vulkanik sisa letusan di puncak yang tersapu air hujan deras menuruni lembah sungai."
+            },
+            {
+                topic: "46. Geografi Pertanian & Pertanian Presisi",
+                difficulty: "Tinggi",
+                question: "Penerapan teknologi pertanian presisi (precision agriculture) menggunakan drone multispektral dan GPS bertujuan utama untuk...",
+                options: [
+                    "A. Mengoptimalkan penggunaan pupuk, air, dan pestisida secara spesifik lokasi guna meningkatkan efisiensi dan mengurangi limbah",
+                    "B. Menghapuskan seluruh tenaga kerja petani manusia",
+                    "C. Memperluas lahan hutan lindung secara paksa",
+                    "D. Mengubah tanaman pangan menjadi tanaman hias"
+                ],
+                answer: 0,
+                explanation: "Pertanian presisi menggunakan teknologi spasial untuk memberikan perlakuan spesifik sesuai kebutuhan riil di setiap titik lahan."
+            },
+            {
+                topic: "47. Oseanografi & Pasang Surut Air Laut",
+                difficulty: "Tinggi",
+                question: "Fenomena pasang surut air laut (tide) dipicu oleh gaya gravitasi bulan dan matahari terhadap bumi. Pasang perbani (neap tide) dengan selisih pasang-surut minimum terjadi pada saat posisi matahari, bumi, dan bulan membentuk sudut...",
+                options: [
+                    "A. Siku-siku (90 derajat, saat bulan kuartal pertama dan ketiga)",
+                    "B. Garis lurus sejajar (0 derajat, saat bulan baru atau purnama)",
+                    "C. Membentuk sudut 45 derajat miring",
+                    "D. Berada di titik terjauh apoge"
+                ],
+                answer: 0,
+                explanation: "Neap tide terjadi saat posisi bulan dan matahari membentuk sudut siku-siku terhadap bumi, saling melemahkan gaya gravitasi."
+            },
+            {
+                topic: "48. Kependudukan & Transisi Demografi",
+                difficulty: "Tinggi",
+                question: "Dalam model Transisi Demografi, tahap kedua (early expanding) dicirikan oleh kondisi di mana tingkat kematian menurun tajam sedangkan tingkat kelahiran...",
+                options: [
+                    "A. Masih tetap tinggi, sehingga memicu laju pertumbuhan penduduk yang sangat pesat",
+                    "B. Turun drastis di bawah angka kematian",
+                    "C. Berhenti total tanpa ada bayi lahir",
+                    "D. Sama persis dengan jumlah migran masuk"
+                ],
+                answer: 0,
+                explanation: "Tahap transisi demografi tahap kedua ditandai penurunan mortalitas berkat kesehatan, sementara fertilitas masih tinggi sehingga populasi meledak."
+            },
+            {
+                topic: "49. Geografi Politik & Batas Wilayah",
+                difficulty: "Tinggi",
+                question: "Penetapan batas maritim suatu negara kepulauan seperti Indonesia diatur berdasarkan Konvensi Hukum Laut Internasional (UNCLOS). Zona laut yang memberikan hak berdaulat penuh bagi Indonesia untuk memanfaatkan kekayaan alam dasar laut hingga 200 mil laut adalah...",
+                options: [
+                    "A. Zona Ekonomi Eksklusif (ZEE) dan Landas Kontinen",
+                    "B. Perairan darat pedalaman pelabuhan",
+                    "C. Laut teritorial 3 mil",
+                    "D. Perairan bebas internasional"
+                ],
+                answer: 0,
+                explanation: "ZEE dan Landas Kontinen memberikan hak eksklusif kepada negara pantai untuk mengelola kekayaan alam di kolom air dan dasar laut hingga 200 mil."
+            },
+            {
+                topic: "50. Integrasi Ayat Al-Qur'an & Kosmologi Akhir (Al-Waqi'ah)",
+                difficulty: "Tinggi",
+                question: "Perhatikan firman Allah SWT dalam Surah Al-Waqi'ah ayat 4-6:<br><span class=\"font-arabic text-emerald-950 text-2xl md:text-3xl block my-3 text-center bg-emerald-50/90 p-5 rounded-2xl border border-emerald-200 shadow-inner\">(إِذَا رُجَّتِ الْأَرْضُ رَجًّا * وَبُسَّتِ الْجِبَالُ بَسًّا * فَكَانَتْ هَبَاءً مُّنْبَثًّا)</span><br><br>Gambaran dahsyatnya hari kiamat di mana gunung-gunung dihancurkan hingga menjadi debu yang beterbangan ('habaam munbatskha') secara kosmologis menunjukkan akhir dari siklus...",
+                options: [
+                    "A. Evolusi litosfer bumi dan struktur geomorfologi daratan yang hancur lebur",
+                    "B. Siklus hidrologi normal air hujan harian",
+                    "C. Pergerakan lempeng tektonik yang stabil",
+                    "D. Pertumbuhan hutan lindung tropis"
+                ],
+                answer: 0,
+                explanation: "Ayat ini melukiskan kehancuran total struktur litosfer dan bentuk geomorfologi gunung di muka bumi menjelang hari akhir."
+            },
+            {
+                topic: "51. Prediksi Puncak KSM: Integrasi Ayat Al-Qur'an & Geografi Lingkungan (Ar-Rum: 41)",
+                difficulty: "Tinggi",
+                question: "Perhatikan firman Allah SWT dalam Surah Ar-Rum ayat 41:<br><span class=\"font-arabic text-emerald-950 text-2xl md:text-3xl block my-3 text-center bg-emerald-50/90 p-5 rounded-2xl border border-emerald-200 shadow-inner\">(ظَهَرَ الْفَسَادُ فِي الْبَرِّ وَالْبَحْرِ بِمَا كَسَبَتْ أَيْدِي النَّاسِ لِيُذِيقَهُم بَعْضَ الَّذِي عَمِلُوا لَعَلَّهُمْ يَرْجِعُونَ)</span><br><br>Dalam perspektif geografi lingkungan dan pembangunan berkelanjutan modern, konsep 'fasad fil-barri wal-bahr' (kerusakan di darat dan di lautan) akibat perbuatan manusia mencerminkan fenomena...",
+                options: [
+                    "A. Degradasi ekosistem global akibat eksploitasi berlebihan, pencemaran lingkungan, dan perubahan iklim antropogenik",
+                    "B. Pergerakan lempeng tektonik alami tanpa campur tangan manusia",
+                    "C. Rotasi bumi harian yang menghasilkan siang dan malam",
+                    "D. Erosi glasial alami di wilayah kutub utara"
+                ],
+                answer: 0,
+                explanation: "Ayat ini (QS. Ar-Rum: 41) adalah landasan teologis utama dalam geografi lingkungan yang menyatakan bahwa sebagian besar kerusakan geosfer (darat dan laut) saat ini bersumber dari aktivitas eksploitasi antroposentris yang tidak bertanggung jawab."
+            }
+        ];
+
+        let currentQuestion = 0;
+        let userAnswers = new Array(questions.length).fill(null);
+        let timerInterval = null;
+        let timeLeft = 2 * 60 * 60; // 2 hours in seconds
+        let studentName = "";
+
+        function validateAndStart() {
+            const inputVal = document.getElementById('input-nama').value.trim().toUpperCase();
+            const errorMsg = document.getElementById('error-nama');
+
+            if (inputVal !== "GERIL SUARDI") {
+                errorMsg.classList.remove('hidden');
+                document.getElementById('input-nama').classList.add('border-red-500', 'ring-4', 'ring-red-200');
+                return;
+            }
+
+            errorMsg.classList.add('hidden');
+            studentName = "GERIL SUARDI";
+            startQuiz();
+        }
+
+        function startQuiz() {
+            document.getElementById('screen-welcome').classList.add('hidden');
+            document.getElementById('screen-quiz').classList.remove('hidden');
+            document.getElementById('timer-box').classList.remove('hidden');
+            
+            startTimer();
+            loadQuestion(0);
+            buildNavigatorGrid();
+        }
+
+        function startTimer() {
+            updateTimerDisplay();
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    finishQuiz();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const hours = Math.floor(timeLeft / 3600);
+            const minutes = Math.floor((timeLeft % 3600) / 60);
+            const seconds = timeLeft % 60;
+            document.getElementById('timer-display').textContent = 
+                `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        }
+
+        function loadQuestion(index) {
+            currentQuestion = index;
+            const q = questions[index];
+
+            document.getElementById('current-q-num').textContent = index + 1;
+            document.getElementById('question-badge').textContent = q.topic.split('. ')[1] || q.topic;
+            document.getElementById('question-topic').textContent = `Topik: ${q.topic}`;
+            document.getElementById('difficulty-badge').textContent = q.difficulty;
+
+            document.getElementById('question-text').innerHTML = q.question;
+
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+
+            q.options.forEach((opt, optIdx) => {
+                const isSelected = userAnswers[index] === optIdx;
+                const btn = document.createElement('button');
+                btn.className = `w-full text-left p-4 rounded-2xl border transition flex items-center space-x-3.5 text-sm md:text-base font-medium shadow-2xs ${
+                    isSelected 
+                        ? 'bg-emerald-50 border-emerald-600 text-emerald-950 ring-2 ring-emerald-600/20 shadow-xs' 
+                        : 'bg-slate-50 hover:bg-emerald-50/40 border-slate-200 text-slate-700'
+                }`;
+                btn.innerHTML = `<span class="w-7 h-7 rounded-xl flex items-center justify-center text-xs font-extrabold shrink-0 ${isSelected ? 'bg-emerald-700 text-white shadow-xs' : 'bg-slate-200 text-slate-700'}">${String.fromCharCode(65 + optIdx)}</span><span class="leading-relaxed">${opt.substring(3)}</span>`;
+                btn.onclick = () => selectOption(optIdx);
+                optionsContainer.appendChild(btn);
+            });
+
+            document.getElementById('btn-prev').disabled = index === 0;
+            const nextBtn = document.getElementById('btn-next');
+            if (index === questions.length - 1) {
+                nextBtn.innerHTML = '<span>Selesai & Kumpul 🏁</span>';
+                nextBtn.className = 'px-7 py-3 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-2xl text-sm shadow-md transition flex items-center space-x-1';
+            } else {
+                nextBtn.innerHTML = '<span>Selanjutnya →</span>';
+                nextBtn.className = 'px-7 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-2xl text-sm shadow-md transition flex items-center space-x-1';
+            }
+
+            updateProgressText();
+            updateNavigatorGridStyles();
+        }
+
+        function selectOption(optIdx) {
+            userAnswers[currentQuestion] = optIdx;
+            loadQuestion(currentQuestion);
+        }
+
+        function nextQuestion() {
+            if (currentQuestion < questions.length - 1) {
+                loadQuestion(currentQuestion + 1);
+            } else {
+                confirmFinish();
+            }
+        }
+
+        function prevQuestion() {
+            if (currentQuestion > 0) {
+                loadQuestion(currentQuestion - 1);
+            }
+        }
+
+        function updateProgressText() {
+            const answeredCount = userAnswers.filter(a => a !== null).length;
+            document.getElementById('quiz-progress-text').textContent = `${answeredCount} dari ${questions.length} Soal Terjawab`;
+        }
+
+        function openNavigator() {
+            document.getElementById('modal-navigator').classList.remove('hidden');
+        }
+
+        function closeNavigator() {
+            document.getElementById('modal-navigator').classList.add('hidden');
+        }
+
+        function buildNavigatorGrid() {
+            const grid = document.getElementById('navigator-grid');
+            grid.innerHTML = '';
+            for (let i = 0; i < questions.length; i++) {
+                const btn = document.createElement('button');
+                btn.id = `nav-btn-${i}`;
+                btn.textContent = i + 1;
+                btn.className = 'h-11 rounded-2xl font-extrabold text-sm border transition flex items-center justify-center shadow-2xs';
+                btn.onclick = () => {
+                    loadQuestion(i);
+                    closeNavigator();
+                };
+                grid.appendChild(btn);
+            }
+            updateNavigatorGridStyles();
+        }
+
+        function updateNavigatorGridStyles() {
+            for (let i = 0; i < questions.length; i++) {
+                const btn = document.getElementById(`nav-btn-${i}`);
+                if (!btn) continue;
+                if (userAnswers[i] !== null) {
+                    btn.className = i === currentQuestion 
+                        ? 'h-11 rounded-2xl font-extrabold text-sm bg-emerald-700 text-white border-2 border-amber-400 shadow-md ring-2 ring-emerald-700/30' 
+                        : 'h-11 rounded-2xl font-extrabold text-sm bg-emerald-100 text-emerald-900 border-emerald-300';
+                } else {
+                    btn.className = i === currentQuestion 
+                        ? 'h-11 rounded-2xl font-extrabold text-sm bg-slate-800 text-white border-2 border-amber-400 shadow-md ring-2 ring-slate-800/30' 
+                        : 'h-11 rounded-2xl font-extrabold text-sm bg-slate-100 text-slate-600 border-slate-300';
+                }
+            }
+        }
+
+        function confirmFinish() {
+            const unanswered = userAnswers.filter(a => a === null).length;
+            if (unanswered > 0) {
+                if (!confirm(`Masih ada ${unanswered} soal yang belum dijawab. Apakah Anda yakin ingin mengakhiri ujian sekarang?`)) {
+                    return;
+                }
+            }
+            finishQuiz();
+        }
+
+        function finishQuiz() {
+            clearInterval(timerInterval);
+            document.getElementById('screen-quiz').classList.add('hidden');
+            document.getElementById('timer-box').classList.add('hidden');
+            document.getElementById('screen-result').classList.remove('hidden');
+
+            let correct = 0;
+            let wrong = 0;
+
+            userAnswers.forEach((ans, idx) => {
+                if (ans === questions[idx].answer) {
+                    correct++;
+                } else {
+                    wrong++;
+                }
+            });
+
+            const finalScore = Math.round((correct / questions.length) * 100);
+            document.getElementById('final-score').textContent = finalScore;
+            document.getElementById('correct-count').textContent = correct;
+            document.getElementById('wrong-count').textContent = wrong;
+        }
+
+        function reviewAnswers() {
+            document.getElementById('screen-result').classList.add('hidden');
+            document.getElementById('screen-review').classList.remove('hidden');
+
+            const container = document.getElementById('review-container');
+            container.innerHTML = '';
+
+            questions.forEach((q, idx) => {
+                const userAns = userAnswers[idx];
+                const isCorrect = userAns === q.answer;
+
+                const card = document.createElement('div');
+                card.className = `p-5 md:p-6 rounded-3xl border ${isCorrect ? 'bg-emerald-50/40 border-emerald-200' : 'bg-red-50/40 border-red-200'} space-y-4 shadow-2xs`;
+                
+                let optionsHtml = '';
+                q.options.forEach((opt, optIdx) => {
+                    let optStyle = 'text-slate-700 bg-white border-slate-200';
+                    if (optIdx === q.answer) {
+                        optStyle = 'bg-emerald-100 text-emerald-950 border-emerald-400 font-bold ring-1 ring-emerald-400';
+                    } else if (optIdx === userAns && !isCorrect) {
+                        optStyle = 'bg-red-100 text-red-950 border-red-400 font-bold line-through';
+                    }
+                    optionsHtml += `<div class="p-3 rounded-xl border text-xs md:text-sm ${optStyle}">${opt}</div>`;
+                });
+
+                card.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <span class="text-xs font-extrabold px-3 py-1 rounded-lg ${isCorrect ? 'bg-emerald-200 text-emerald-950' : 'bg-red-200 text-red-950'}">
+                            Soal No. ${idx + 1} (${isCorrect ? 'Benar ✓' : 'Salah ✗'})
+                        </span>
+                        <span class="text-xs text-slate-500 font-bold">${q.topic}</span>
+                    </div>
+                    <p class="font-bold text-slate-900 text-base md:text-lg">${q.question}</p>
+                    <div class="space-y-2 pt-1">${optionsHtml}</div>
+                    <div class="bg-white p-4 rounded-2xl border border-emerald-100 text-xs md:text-sm text-slate-700 shadow-2xs mt-3">
+                        <strong class="text-emerald-950 font-extrabold block mb-1">💡 Pembahasan Resmi & Analisis HOTS:</strong> ${q.explanation}
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function backToResult() {
+            document.getElementById('screen-review').classList.add('hidden');
+            document.getElementById('screen-result').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
